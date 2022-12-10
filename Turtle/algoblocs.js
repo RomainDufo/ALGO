@@ -632,7 +632,7 @@ for(let i=0; i<4; i++){
 //D1
 // Initialisation
 
-let longueurD1
+let longueurD1;
 setPos(250,200);
 setLineWidth(10);
 faceRight();
@@ -646,16 +646,169 @@ for(let i=0; i<8; i++){
     right(180-135);
 }
 
-*/
-
 //D9
 // Initialisation
 
-setPos(250,200);
+setPos(300,250);
 setLineWidth(10);
 faceRight();
 changeColor(color.blue);
+let longueurD9;
 
 // Réalisation
 
+longueurD9 = 50;
+for(let i=0; i<6; i++){
+    forward(longueurD9);
+    right(180-60);
+    longueurD9 = longueurD9 + 50;
+}
+
+
+//D10
+// Initialisation
+
+setPos(250,250);
+setLineWidth(10);
+faceRight();
+changeColor(color.yellow);
+let longueurD10;
+
+// Réalisation 
+
+longueurD10 = 50;
+for(let i=0; i<10; i++){
+    forward(longueurD10);
+    right(180-90);
+    longueurD10 = longueurD10 + 25;
+}
+
+
+//D11
+// Initialisation
+
+setPos(50,250);
+setLineWidth(10);
+faceRight();
+changeColor(color.yellow);
+let longueurD11;
+
+// Réalisation
+
+longueurD11 = 150;
+for(let i=0; i<5; i++){
+    for(let j=0; j<3; j++){
+        forward(longueurD11);
+        left(180-60);
+    }
+    forward(longueurD11);
+    longueurD11 = longueurD11 - 25;
+}
+
+//D12
+// Initialisation
+
+setPos(250,250);
+setLineWidth(10);
+faceRight();
+changeColor(color.green);
+let longueurD12;
+
+// Réalisation
+
+longueurD12 = 50;
+for(let i=0; i<6; i++){
+    for(let j=0; j<4; j++){
+        forward(longueurD12);
+        left(180-60);
+    }
+    left(180-240);
+    longueurD12 = longueurD12 + 25;
+}
+
+
+//D13 
+// Initialisation
+
+setPos(200,300);
+setLineWidth(10);
+faceRight();
+changeColor(color.red);
+let longueurD13;
+
+// Réalisation
+
+longueurD13 = 50;
+for(let i=0; i<8; i++){
+    
+    up();
+    forward(25);
+    down();
+    longueurD13 = longueurD13 + 25;
+}
+
+// !!!!! PAS FINI !!!!! //
+
+
+//Bonus1
+// Initialisation
+
+setPos(50,300);
+setLineWidth(2);
+faceRight();
+shiftColor(0.01);
+let longueurBonus1
+
+// Réalisation
+
+for(let i=0; i<8; i++){
+    forward(50);
+    shiftColor(0.2);
+}
+
+
+//Bonus6
+// Initialisation
+
+setPos(50,250);
+setLineWidth(10);
+faceUp();
+changeColor(color.red);
+
+// Réalisation 
+
+for(let i=0; i<3; i++){
+    right(180-60);
+    forward(110);
+}
+up();
+faceRight();
+forward(150);
+down();
+forward(70);
+
+for(let i=0; i<2; i++){
+    faceLeft();
+    forward(70);
+    faceDown();
+    forward(50);
+    faceRight();
+    forward(70);
+}
+
+up();
+forward(100);
+down();
+
+left(180-70)
+forward(120);
+
+up();
+faceRight();
+forward(80);
+down();
+right(180-70);
+forward(120);
+
+*/
 
